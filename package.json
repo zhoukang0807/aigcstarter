@@ -1,0 +1,24 @@
+{
+  "name": "aigcstarter",
+  "version": "0.0.1",
+  "description": "aigc starter,webui,comfyui,Orillusion in",
+  "main": "./dist/app.js",
+  "scripts": {
+    "prestart": "tsc",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhoukang0807/aigcstarter.git"
+  },
+  "author": "weehel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhoukang0807/aigcstarter/issues"
+  },
+  "homepage": "https://github.com/zhoukang0807/aigcstarter#readme",
+  "devDependencies": {
+    "electron": "^27.1.2",
+    "typescript": "^5.3.2"
+  }
+}
