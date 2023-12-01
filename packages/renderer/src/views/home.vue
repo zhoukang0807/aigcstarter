@@ -4,8 +4,7 @@ import { useBasicStore } from '../engine/stores/basic';
 import { showToast } from 'vant'
 import { storeToRefs } from 'pinia'
 import { Button, Cell, CellGroup } from 'vant';
-import { title } from 'process';
-
+import { Editor } from 'orillusion-editor'
 
 export default {
   name: "Home",
@@ -16,6 +15,12 @@ export default {
     const clickToast = () => {
       showToast("点击了");
     }
+    async function demo() {
+      const editor = new Editor();
+      editor.init();
+      // Next 
+    }
+
     onMounted(() => {
       userId.value = s_userId.value
     })
@@ -25,7 +30,7 @@ export default {
         <CellGroup>
           <Cell title="单元格" value="内容" v-slots={{
             title: () => <span>这是用户ID: {userId.value}</span>,
-            value: () => <Button onClick={clickToast} type="primary">主要按钮</Button>
+            value: () => <Button onClick={demo} type="primary">主要按钮</Button>
           }} />
         </CellGroup>
       </div>
