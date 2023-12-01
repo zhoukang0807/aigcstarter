@@ -24,6 +24,7 @@
   "homepage": "https://github.com/zhoukang0807/aigcstarter#readme",
   "devDependencies": {
     "@playwright/test": "^1.40.1",
+    "@types/node": "^20.10.1",
     "@vitejs/plugin-vue": "^4.5.0",
     "@vitejs/plugin-vue-jsx": "^3.1.0",
     "cross-env": "^7.0.3",
@@ -32,6 +33,7 @@
     "electron-devtools-installer": "^3.2.0",
     "extract-zip": "^2.0.1",
     "fs-extra": "^11.2.0",
+    "orillusion-editor": "file:./packages/orillusion-editor",
     "postcss": "^8.4.31",
     "postcss-pxtorem": "^6.0.0",
     "request": "^2.88.2",
@@ -42,8 +44,7 @@
     "vite-plugin-electron-renderer": "^0.14.5",
     "vite-plugin-resolve": "^2.5.1",
     "vue": "^3.3.9",
-    "vue-tsc": "^1.8.24",
-    "orillusion-editor": "file:./packages/orillusion-editor"
+    "vue-tsc": "^1.8.24"
   },
   "engines": {
     "node": ">=18.0.0"
