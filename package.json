@@ -5,8 +5,7 @@
   "main": "dist/main/index.cjs",
   "scripts": {
     "dev": "cross-env VITE_RUNTIME_ENV=github node scripts/watch.mjs",
-    "preinstall": "cd packages/orillusion-editor && npm install",
-    "prestart": "cd packages/orillusion-editor && npm run build && cd ../../ tsc",
+    "prestart": "tsc",
     "start": "electron .",
     "prebuild": "node scripts/build.mjs",
     "build": "electron-builder",

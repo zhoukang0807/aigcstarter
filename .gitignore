@@ -1,8 +1,8 @@
 .DS_Store
 node_modules
 /dist
-/packages/orillusion-editor/dist
-
+/packages/orillusion-editor-core/dist
+npminstall-debug.log
 # local env files
 .env.local
 .env.*.local
