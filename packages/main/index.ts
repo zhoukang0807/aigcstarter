@@ -41,17 +41,19 @@ process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true'
 
 let isHasScreen = false;
 async function checkAndApplyDevicePrivilege() {
-  const cameraPrivilege = systemPreferences.getMediaAccessStatus('camera');
+  // const cameraPrivilege = systemPreferences.getMediaAccessStatus('camera');
 
-  if (cameraPrivilege !== 'granted') {
-    await systemPreferences.askForMediaAccess('camera');
-  }
+  //获取相机权限
+  // if (cameraPrivilege !== 'granted') {
+  //   await systemPreferences.askForMediaAccess('camera');
+  // }
 
-  const micPrivilege = systemPreferences.getMediaAccessStatus('microphone');
+  //获取麦克风权限
+  // const micPrivilege = systemPreferences.getMediaAccessStatus('microphone');
 
-  if (micPrivilege !== 'granted') {
-    await systemPreferences.askForMediaAccess('microphone');
-  }
+  // if (micPrivilege !== 'granted') {
+  //   await systemPreferences.askForMediaAccess('microphone');
+  // }
 
   const screenPrivilege = systemPreferences.getMediaAccessStatus('screen');
   console.log(screenPrivilege);
