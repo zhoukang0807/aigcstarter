@@ -1,0 +1,8 @@
+//全局可使用的样式
+// 上下工具栏背景颜色
+$toolBarBackgroundColor: #1D2029;
+//覆盖vant样式
+:root:root{
+	--van-button-primary-color: #FFF;
+    --van-button-primary-background: #000;
+}

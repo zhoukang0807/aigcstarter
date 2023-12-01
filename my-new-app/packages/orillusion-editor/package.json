@@ -1,0 +1,22 @@
+{
+  "name": "orillusion-editor",
+  "version": "0.0.1",
+  "description": "3d engine by weehel",
+  "type": "module",
+  "main": "./src/index.ts",
+  "scripts": {
+    "prestart": "tsc",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@orillusion/core": "^0.7.1"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "author": "weehel",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.3.2"
+  }
+}
