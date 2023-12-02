@@ -1,10 +1,7 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import resolve from 'vite-plugin-resolve'
-import AutoImport from 'unplugin-auto-import/vite'
 import electron from 'vite-plugin-electron-renderer'
-import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
-import Components from 'unplugin-vue-components/vite'
 import pkg from '../../package.json'
 //@ts-ignore
 import { createSvg } from './src/engine/assets/icons/index.js'
@@ -38,14 +35,6 @@ export default defineConfig({
       }
     ),
     createSvg(path.join(path.resolve(__dirname, 'src/engine/assets/icons/svg/'), '/')),
-    AutoImport({
-      resolvers: [ElementPlusResolver()],
-    }),
-    Components({
-      resolvers: [ElementPlusResolver({
-        importStyle: 'sass',
-      })],
-    }),
   ],
   css: {
     preprocessorOptions: {

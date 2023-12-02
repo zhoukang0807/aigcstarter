@@ -14,12 +14,12 @@ const config: ForgeConfig = {
       build: [
         {
           // `entry` is just an alias for `build.lib.entry` in the corresponding file of `config`.
-          entry: 'dist/main/index.js',
+          entry: 'packages/main/index.ts',
           config: 'packages/main/vite.config.ts',
         },
         {
-          entry: 'dist/perload/index.ts',
-          config: 'packages/perload/vite.config.ts',
+          entry: 'packages/preload/index.ts',
+          config: 'packages/preload/vite.config.ts',
         },
       ],
       renderer: [

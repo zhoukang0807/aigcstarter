@@ -66,7 +66,7 @@ let win: BrowserWindow | null = null
 let schemeRoomId = '';
 
 function registerScheme() {
-  const args = [];
+  const args:any = [];
   if (!app.isPackaged) {
     // 如果是开发阶段，需要把我们的脚本的绝对路径加入参数中
     args.push(resolve(process.argv[1]));
